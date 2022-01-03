@@ -1,0 +1,194 @@
+    /*цвет основного текста #212121*/
+    /*вторичный цвет текста #757575*/ 
+    /*белый цвет #FFFFFF*/
+    /*акцент #2196F3*/
+    /*цвет второй части логотипа в хедере #000000;*/
+
+    /*цвет фона #E5E5E5*/
+    /*вторичный цвет фона #F5F4FA*/
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-bg-color: #E5E5E5;
+    --primary-white-color: #FFFFFF;
+}
+
+body {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.71;
+    }
+
+    /*Header*/
+    .logo  {
+    color: #2196F3;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+    } 
+    
+    
+    .logo-studio-header {color:#000000;}
+    .list {list-style: none}
+    
+    .site-nav .link {
+        color: var(--title-text-color);
+        font-weight: 500;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+    }
+
+    .site-nav .link.current {color: var(--accent-color);}
+
+    .site-nav .link:hover,
+    .site-nav .link:focus
+    {color: var(--accent-color);}
+
+    .contacts  .link {
+        text-decoration: none;
+        color: var(--primary-text-color);}
+
+    .contacts  .link:hover,
+    .contacts  .link:focus
+    {color: var(--accent-color);}
+
+    /*Hero*/
+    .hero {background-color: #2F303A; width: 1600px; height: 600px;}
+    .hero-title {
+        color: var(--primary-white-color);
+        
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.4;
+        letter-spacing: 0.06em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    /*Section*/
+    .section .section-title {color: var(--title-text-color);}
+    
+    .section-title {
+        list-style: none;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    /*Features*/
+    .features-list .title {
+        color: var(--title-text-color);
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.1;
+        text-transform: uppercase;
+    }
+    .features-list {list-style: none;}
+
+    /*Eployees*/
+    .eployees-card .title {
+        color: var(--title-text-color);
+    
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .eployees-card .position {
+        font-size: 16px;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .eployees-card {list-style: none;}
+
+    /*Button main*/
+    button {cursor: pointer;}
+    .button {
+        font-family: inherit;
+        /*position: absolute;*/
+        width: 200px;
+        height: 50px;
+        left: 700px;
+        top: 430px;
+    }
+
+    .hero .button {
+        background-color: var(--accent-color);
+        color: var(--primary-white-color);
+        width: 200px;
+        height: 50px;
+        left: 700px;
+        top: 430px;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 2;
+    }
+
+    /*Footer*/
+    .logo-studio-footer {color: var(--primary-white-color);}
+
+    .address .link {color: var(--primary-white-color);}
+
+    .address .contacts
+     {color: rgba(255, 255, 255, 0.6);}
+
+    .address .contacts:hover,
+    .address .link:hover
+     {color: var(--accent-color);}
+
+    .address .contacts,
+    .address .link {
+         text-decoration: none;
+         font-style: normal;
+     }
+
+    footer {
+        background-color: #2F303A;
+        }
+
+        
+    /*Portfolio*/
+
+    /*Button potfolio*/
+button {cursor: pointer;}
+
+    .filters .button-filters {
+        background-color: #F5F4FA;
+        color: var(--title-text-color);
+        }
+
+    .filters  .button-filters:hover,
+    .filters  .button-filters:focus{
+         color: var( --primary-white-color);
+         background-color: var(--accent-color);
+    }
+
+  .works-title {
+      text-align: center;
+      color: var(--title-text-color);
+      
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 2;     
+      letter-spacing: 0.06em;
+    } 
+
+    .works .defenition {
+        text-align: center;
+
+        font-size: 16px;
+        line-height: 1.87;
+    }
