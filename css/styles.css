@@ -22,13 +22,16 @@ body {
     letter-spacing: 0.03em;
     font-size: 14px;
     line-height: 1.71;
+    width: 1600px;
     }
 
     .conteiner {
         margin-left: auto;
         margin-right: auto;
-        width: 1170px;
+        width: 1200px;
         outline: 2px solid tomato;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     /*Header*/
@@ -211,6 +214,27 @@ body {
 
 
     /*Footer*/
+
+    .footer.conteiner {
+        padding-top: 60px;
+    }
+
+    address{
+        margin-top: 20px;
+        min-width: 231px;
+        height: 81px;
+    }
+
+    .footer.link{
+        display: inline-block;
+        margin-bottom: 9px;
+    }
+
+    .footer.contacts{
+        display: inline-block;
+        margin-bottom: 9px;
+    }
+
     .logo-studio-footer {color: var(--primary-white-color);}
 
     .address .link {color: var(--primary-white-color);}
@@ -256,19 +280,37 @@ body {
          background-color: var(--accent-color);
     }
 
-  .works-title {
-      text-align: center;
+    /*Main*/
+
+    .samples.conteiner{
+        margin: 94px auto;
+    }
+
+    .works-title {
+      margin-top: 20px;
+      margin-bottom: 4px;
+      margin-left: 24px;
+      
       color: var(--title-text-color);
       
       font-weight: 700;
       font-size: 18px;
       line-height: 2;     
       letter-spacing: 0.06em;
+
+      width: 322px;
+      min-height: 36px;
     } 
 
     .works .defenition {
-        text-align: center;
+        
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 24px;
 
         font-size: 16px;
         line-height: 1.87;
+
+        width: 322px;
+        min-height: 30px;
     }
