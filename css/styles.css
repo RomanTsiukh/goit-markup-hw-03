@@ -24,6 +24,13 @@ body {
     line-height: 1.71;
     }
 
+    .conteiner {
+        margin-left: auto;
+        margin-right: auto;
+        width: 1170px;
+        outline: 2px solid tomato;
+    }
+
     /*Header*/
     .logo  {
     color: #2196F3;
@@ -34,9 +41,12 @@ body {
     text-decoration: none;
     } 
     
-    
     .logo-studio-header {color:#000000;}
-    .list {list-style: none}
+    
+    .list {
+        padding: 0;
+        margin: 0;
+        list-style: none}
     
     .site-nav .link {
         color: var(--title-text-color);
@@ -60,11 +70,33 @@ body {
     .contacts  .link:focus
     {color: var(--accent-color);}
 
-    /*Hero*/
-    .hero {background-color: #2F303A; width: 1600px; height: 600px;}
+    /*Hero*/ 
+
+    .hero {
+
+        outline: 2px solid tomato;
+
+        text-align: center;
+        background-color: #2F303A;
+        width: 1600px; 
+        height: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 200px;
+        margin-bottom: 94px;
+    }
+
+    h1 {margin-top: 0;}
+
     .hero-title {
+        outline: 2px solid tomato;
         color: var(--primary-white-color);
-        
+        width: 696px;
+        height: 120px;
+   
+        margin-left: auto;
+        margin-right: auto;
+
         font-weight: 900;
         font-size: 44px;
         line-height: 1.4;
@@ -72,6 +104,28 @@ body {
         text-align: center;
         text-transform: uppercase;
     }
+
+    /*Button main*/
+
+    .hero .button {
+        font-family: inherit;
+        cursor: pointer; 
+        margin-top: 30px; 
+     
+        border-radius: 4px;
+        display: inline-block;
+        
+        background-color: var(--accent-color);
+        color: var(--primary-white-color);
+        width: 200px;
+        height: 50px;
+
+        
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+    }
+
 
     /*Section*/
     .section .section-title {color: var(--title-text-color);}
@@ -85,17 +139,49 @@ body {
     }
 
     /*Features*/
-    .features-list .title {
+
+    .feature .list {}
+
+    .feature .title {
+        margin-bottom: 10px;
+        width: 270px;
+    
+    }
+
+    .list .title {
+
+        margin-top: 0px;
+
         color: var(--title-text-color);
 
         font-weight: 700;
         font-size: 14px;
         line-height: 1.1;
-        text-transform: uppercase;
     }
-    .features-list {list-style: none;}
+
+    .paragraph-features {
+        margin: 0;
+        width: 270px;
+        min-height: 75px;
+    }
+
+    .feature.section {margin-bottom: 94px;}
+
+    /*Work*/
+
+    .work .section-title {
+        margin-top: 0;
+        margin-bottom: 50px;
+    } 
 
     /*Eployees*/
+
+    .eployees.section {
+        background-color: #F5F4FA;
+        padding-top: 94px;
+    }
+
+
     .eployees-card .title {
         color: var(--title-text-color);
     
@@ -105,37 +191,24 @@ body {
         text-align: center;
     }
 
+    .eployees.section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
     .eployees-card .position {
         font-size: 16px;
         line-height: 1.2;
         text-align: center;
+        margin: 0;
     }
 
-    .eployees-card {list-style: none;}
-
-    /*Button main*/
-    button {cursor: pointer;}
-    .button {
-        font-family: inherit;
-        /*position: absolute;*/
-        width: 200px;
-        height: 50px;
-        left: 700px;
-        top: 430px;
+    .eployee.title {
+        margin-top: 30px;
+        margin-bottom: 10px;
     }
 
-    .hero .button {
-        background-color: var(--accent-color);
-        color: var(--primary-white-color);
-        width: 200px;
-        height: 50px;
-        left: 700px;
-        top: 430px;
 
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 2;
-    }
 
     /*Footer*/
     .logo-studio-footer {color: var(--primary-white-color);}
@@ -157,15 +230,22 @@ body {
 
     footer {
         background-color: #2F303A;
+        height: 252px;
+        width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
         }
 
         
     /*Portfolio*/
 
     /*Button potfolio*/
-button {cursor: pointer;}
 
     .filters .button-filters {
+        font-family: inherit;
+        
+        cursor: pointer;
+        border-radius: 4px;
         background-color: #F5F4FA;
         color: var(--title-text-color);
         }
