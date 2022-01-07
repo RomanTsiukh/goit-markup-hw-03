@@ -16,7 +16,7 @@
 }
 
 body {
-    background-color: var(--primary-bg-color);
+    /*background-color: var(--primary-bg-color);*/
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
@@ -25,18 +25,25 @@ body {
     width: 1600px;
     }
 
-    .list {
-        padding: 0;
-        margin: 0;
-        list-style: none}
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none
+    }
 
-    .conteiner {
-        margin-left: auto;
-        margin-right: auto;
-        width: 1200px;
-        outline: 2px solid tomato;
-        padding-left: 15px;
-        padding-right: 15px;
+.conteiner {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    /*outline: 2px solid tomato;*/
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+
+img {
+    display: block;
+    width: 100%;
+    height:auto;
     }
 
     .section {
@@ -57,11 +64,7 @@ body {
     .logo-studio-header {color:#000000;}
 
     .site-nav.list {display: flex;}
-
-    .site-nav .item {
-        outline: 1px solid red;
-    }
-
+    
     .logo.header {display: block;}
 
     /*Header_site-nav*/
@@ -69,7 +72,9 @@ body {
     
     .header.conteiner {
         display: flex;
-        align-items: center;}
+        align-items: center;
+        /*background-color: var(--primary-white-color);*/
+    }
 
     .header-nav {display: flex;
         align-items: center;}
@@ -114,8 +119,6 @@ body {
     /*Hero*/ 
 
     .hero {
-        outline: 2px solid tomato;
-
         text-align: center;
         background-color: #2F303A;
         width: 1600px; 
@@ -123,19 +126,19 @@ body {
         margin-left: auto;
         margin-right: auto;
         padding-top: 200px;
-        /*margin-bottom: 94px;*/
+        padding-bottom: 200px;
     }
 
     h1 {margin-top: 0;}
 
     .hero-title {
-        outline: 2px solid tomato;
         color: var(--primary-white-color);
         width: 696px;
         height: 120px;
    
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 30px;
 
         font-weight: 900;
         font-size: 44px;
@@ -150,7 +153,6 @@ body {
     .hero .button {
         font-family: inherit;
         cursor: pointer; 
-        margin-top: 30px; 
      
         border-radius: 4px;
         display: inline-block;
@@ -224,9 +226,7 @@ body {
 
     /*Eployees*/
 
-    .eployees.section {
-        background-color: #F5F4FA;
-    }
+    .eployees.section {background-color: #F5F4FA;}
 
     .eployees-card .title {
         color: var(--title-text-color);
@@ -246,7 +246,7 @@ body {
 
     .eployees .item {
         width: 270px;
-        height: 368px;
+        height: auto;
         background-color: var(--primary-white-color);
     }
 
@@ -254,7 +254,8 @@ body {
         font-size: 16px;
         line-height: 1.2;
         text-align: center;
-        margin: 0;
+        margin-top: 0;
+        margin-bottom: 30px;
     }
 
     .eployee.title {
@@ -266,25 +267,29 @@ body {
 
     /*Footer*/
 
-    .footer.conteiner {
+    footer {
+        background-color: #2F303A;
+        width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
         padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .footer.logo {
+        display: inline-block;
+        margin-bottom: 20px;
     }
 
     address{
-        margin-top: 20px;
         min-width: 231px;
         height: 81px;
     }
 
-    .footer.link{
-        display: inline-block;
-        margin-bottom: 9px;
-    }
+    .address .item {margin-bottom: 9px;}
+    .address .item:nth-last-child(-n+1) {margin-bottom: 0;}
 
-    .footer.contacts{
-        display: inline-block;
-        margin-bottom: 9px;
-    }
+    .footer.contacts{margin-bottom: 0;}
 
     .logo-studio-footer {color: var(--primary-white-color);}
 
@@ -303,15 +308,7 @@ body {
          font-style: normal;
      }
 
-    footer {
-        background-color: #2F303A;
-        height: 252px;
-        width: 1600px;
-        margin-left: auto;
-        margin-right: auto;
-        }
 
-        
 
     /*Portfolio*/
 
@@ -372,7 +369,6 @@ body {
         font-size: 16px;
         line-height: 1.63;
         font-weight: 500;
-    
     }
 
     /*Works card*/
@@ -400,11 +396,21 @@ body {
 
     .card .item:nth-last-child(-n+3) {margin-bottom: 0;}
 
+    .card .card-link {
+        display: block;
+        text-decoration: none;
+        color: var(--primary-text-color);
+    }
+    
+    .item .card-info {
+        padding-top: 20px;
+        padding-left: 24px;
+    }
+
     .works-title {
-      margin-top: 20px;
+      margin-top: 0;
       margin-bottom: 4px;
-      margin-left: 24px;
-      
+        
       color: var(--title-text-color);
       
       font-weight: 700;
@@ -419,7 +425,6 @@ body {
     .works .defenition {
         margin-top: 0;
         margin-bottom: 0;
-        margin-left: 24px;
 
         font-size: 16px;
         line-height: 1.87;
@@ -427,3 +432,4 @@ body {
         width: 322px;
         min-height: 30px;
     }
+
